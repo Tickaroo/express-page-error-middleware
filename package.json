@@ -1,0 +1,43 @@
+{
+  "name": "express-page-error-middleware",
+  "version": "1.0.0",
+  "description": "Error pages handling middleware for express",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tickaroo/express-page-error-middleware.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "peerDependencies": {
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.1.1",
+    "chai": "^3.3.0",
+    "express": "^4.13.3",
+    "istanbul": "^0.4.0",
+    "jade": "^1.9.2",
+    "mocha": "^2.2.1",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover node_modules/.bin/_mocha",
+    "cobertura": "istanbul report cobertura"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "errors",
+    "error",
+    "error-pages"
+  ],
+  "author": "Anton Pawlik <anton.pawlik@gmail.com> (http://antpaw.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tickaroo/express-page-error-middleware/issues"
+  },
+  "homepage": "https://github.com/tickaroo/express-page-error-middleware#readme"
+}
