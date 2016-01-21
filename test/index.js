@@ -1,14 +1,14 @@
 var expect = require('chai').expect;
 var Bluebird = require('bluebird');
 var request = Bluebird.promisifyAll(require('supertest'));
-var requestx = require('supertest');
 var app = require('./fixture/app.js');
 
 describe('express-page-error-middleware', function() {
-  this.slow(600);
   console.warn = function() {}; // dirty hack to hide console.warns produced by the middleware
+  this.slow(200);
 
   it('should make express return 404', function() {
+    this.slow(1000);
     return request(app())
       .get('/page-that-does-not-exist')
       .expect(404)
@@ -59,7 +59,7 @@ describe('express-page-error-middleware', function() {
   });
 
   it('should display url', function() {
-    return requestx(app(true))
+    return request(app(true))
       .get('/api_error')
       .expect(500)
       .endAsync()

@@ -1,4 +1,4 @@
-# express-page-error-middleware [![npm version](https://badge.fury.io/js/express-page-error-middleware.svg)](https://www.npmjs.com/package/express-page-error-middleware) [![Build Status](https://travis-ci.org/tickaroo/express-page-error-middleware.svg?branch=master)](https://travis-ci.org/tickaroo/express-page-error-middleware)
+# express-page-error-middleware [![npm version](https://badge.fury.io/js/express-page-error-middleware.svg)](https://www.npmjs.com/package/express-page-error-middleware) [![Build Status](https://travis-ci.org/Tickaroo/express-page-error-middleware.svg?branch=master)](https://travis-ci.org/Tickaroo/express-page-error-middleware)
 
 Error pages handling middleware for express
 
@@ -10,7 +10,7 @@ $ npm install --save express-page-error-middleware
 
 ## Usage
 
-Below is a example of usage. [test/app.js](https://github.com/tickaroo/express-page-error-middleware/blob/master/test/app.js) also
+Below is a example of usage. [test/fixture/app.js](https://github.com/tickaroo/express-page-error-middleware/blob/master/test/fixture/app.js) also
 have a similar example.
 
 ```javascript
@@ -34,4 +34,3 @@ Variables provided inside the template.
 - `error` error object
 - `stack` error stack
 - `url` bind this e.g. while throwing an API error object `err.url = apiRequest.url`, to see what API url has caused it
-```

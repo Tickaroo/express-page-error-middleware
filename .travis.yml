@@ -1,8 +1,15 @@
 language: node_js
 node_js:
-  - 'stable'
-  - '4.1'
+  - '5.5'
+  - '4.2'
   - '0.12'
-after_sucess:
-  - npm run coverage
-  - npm run cobertura
+after_script:
+  - 'npm run coverage'
+  - 'npm run cobertura'
+deploy:
+  provider: npm
+  email: $EMAIL_ADDRESS
+  api_key: $NPM_API_KEY
+  on:
+    tags: true
+    all_branches: true
