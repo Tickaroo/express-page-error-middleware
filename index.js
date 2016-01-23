@@ -8,7 +8,7 @@ module.exports = function(template) {
       err.message = 'Not Found';
       next(err);
     },
-    function(err, req, res) {
+    function(err, req, res, next) {
       var detail;
       console.warn(err.stack);
       res.status(err.status || 500);
@@ -20,6 +20,7 @@ module.exports = function(template) {
         error: err,
         detail: detail
       }, res.locals));
+      next();
     }
   ];
 };

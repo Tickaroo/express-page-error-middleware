@@ -28,7 +28,7 @@ module.exports = function(dev) {
     throw 'denied';
   });
 
-  app.use(errorMiddleware(dev ? 'error-dev.jade' : 'error.jade', true));
+  app.use(errorMiddleware(dev ? 'error-dev.jade' : 'error.jade'));
 
   return app;
 }
