@@ -1,14 +1,14 @@
-_ = require('lodash');
+var _ = require('lodash');
 
-module.exports = function(template){
+module.exports = function(template) {
   return [
     function(req, res, next) {
-      var err = new Error;
+      var err = new Error();
       err.status = 404;
       err.message = 'Not Found';
       next(err);
     },
-    function(err, req, res, next) {
+    function(err, req, res) {
       var detail;
       console.warn(err.stack);
       res.status(err.status || 500);

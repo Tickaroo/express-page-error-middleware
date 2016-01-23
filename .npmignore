@@ -15,3 +15,5 @@ coverage
 .DS_Store
 test
 .editorconfig
+.jshintrc
+.jshintignore

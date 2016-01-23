@@ -22,11 +22,13 @@
     "express": "^4.13.3",
     "istanbul": "^0.4.0",
     "jade": "^1.9.2",
+    "jshint": "^2.9.1",
     "mocha": "^2.2.1",
     "supertest": "^1.1.0"
   },
   "scripts": {
     "test": "mocha",
+    "lint": "jshint **.js **/*.js",
     "coverage": "istanbul cover node_modules/.bin/_mocha",
     "cobertura": "istanbul report cobertura"
   },
