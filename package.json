@@ -1,6 +1,6 @@
 {
   "name": "express-page-error-middleware",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Error pages handling middleware for express",
   "main": "index.js",
   "repository": {
