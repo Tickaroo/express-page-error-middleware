@@ -1,6 +1,6 @@
 {
   "name": "express-page-error-middleware",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Error pages handling middleware for express",
   "main": "index.js",
   "repository": {
@@ -12,9 +12,6 @@
   },
   "directories": {
     "test": "test"
-  },
-  "peerDependencies": {
-    "lodash": "^4.0.0"
   },
   "devDependencies": {
     "bluebird": "^3.1.1",

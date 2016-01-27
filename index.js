@@ -1,5 +1,3 @@
-var _ = require('lodash');
-
 module.exports = function(template) {
   return [
     function(req, res, next) {
@@ -13,13 +11,13 @@ module.exports = function(template) {
       console.warn(err.stack);
       res.status(err.status || 500);
       detail = err.message || err.text || err.toString();
-      res.render(template, _.extend({
+      res.render(template, {
         code: res.statusCode,
         url: err.url,
         stack: err.stack,
         error: err,
         detail: detail
-      }, res.locals));
+      });
       next();
     }
   ];
