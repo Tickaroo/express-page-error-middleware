@@ -1,4 +1,5 @@
-# express-page-error-middleware [![npm version](https://badge.fury.io/js/express-page-error-middleware.svg)](https://www.npmjs.com/package/express-page-error-middleware) [![Build Status](https://travis-ci.org/Tickaroo/express-page-error-middleware.svg?branch=master)](https://travis-ci.org/Tickaroo/express-page-error-middleware) [![codecov.io](https://codecov.io/github/Tickaroo/express-page-error-middleware/coverage.svg?branch=master)](https://codecov.io/github/Tickaroo/express-page-error-middleware?branch=master)
+# express-page-error-middleware
+[![npm version](https://badge.fury.io/js/express-page-error-middleware.svg)](https://www.npmjs.com/package/express-page-error-middleware) [![Build Status](https://travis-ci.org/Tickaroo/express-page-error-middleware.svg?branch=master)](https://travis-ci.org/Tickaroo/express-page-error-middleware) [![codecov.io](https://codecov.io/github/Tickaroo/express-page-error-middleware/coverage.svg?branch=master)](https://codecov.io/github/Tickaroo/express-page-error-middleware?branch=master)
 
 Error pages handling middleware for express
 
