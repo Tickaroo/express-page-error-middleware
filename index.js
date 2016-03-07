@@ -8,7 +8,9 @@ module.exports = function(template) {
     },
     function(err, req, res, next) {
       var detail;
-      console.warn(err.stack);
+      if (err.status !== 404) {
+        console.warn(err.stack);
+      }
       res.status(err.status || 500);
       detail = err.message || err.text || err.toString();
       res.render(template, {
