@@ -21,6 +21,10 @@ module.exports = function(template) {
         detail: detail
       });
       next();
+    },
+    function(err, req, res, next) {
+      res.send('ERROR');
+      next();
     }
   ];
 };

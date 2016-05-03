@@ -49,7 +49,7 @@ describe('express-page-error-middleware', function() {
   });
 
   it('should display error stack', function() {
-    return request(app(true))
+    return request(app('error-dev.jade'))
       .get('/')
       .expect(500)
       .endAsync()
@@ -59,12 +59,22 @@ describe('express-page-error-middleware', function() {
   });
 
   it('should display url', function() {
-    return request(app(true))
+    return request(app('error-dev.jade'))
       .get('/api_error')
       .expect(500)
       .endAsync()
       .then(function(res) {
         expect(res.text).to.contain('<pre>http://some.url</pre>');
+      });
+  });
+
+  it('should display only "ERROR" on broken templates', function() {
+    return request(app('missing-error-template.jade'))
+      .get('/api_error')
+      .expect(500)
+      .endAsync()
+      .then(function(res) {
+        expect(res.text).to.equal('ERROR');
       });
   });
 });

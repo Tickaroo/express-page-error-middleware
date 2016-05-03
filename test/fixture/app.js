@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var errorMiddleware = require('../../');
 
-module.exports = function(dev) {
+module.exports = function(templateFile) {
   var app = express();
   app.set('view engine', 'jade');
   app.set('views', path.join(__dirname, 'views'));
@@ -28,7 +28,7 @@ module.exports = function(dev) {
     throw 'denied';
   });
 
-  app.use(errorMiddleware(dev ? 'error-dev.jade' : 'error.jade'));
+  app.use(errorMiddleware(templateFile ? templateFile : 'error.jade'));
 
   return app;
 }
