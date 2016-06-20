@@ -11,8 +11,7 @@ $ npm install --save express-page-error-middleware
 
 ## Usage
 
-Below is a example of usage. [test/fixture/app.js](https://github.com/tickaroo/express-page-error-middleware/blob/master/test/fixture/app.js) also
-have a similar example.
+Below is a example of usage. [test/fixture/app.js](https://github.com/tickaroo/express-page-error-middleware/blob/master/test/fixture/app.js) also has a similar example.
 
 ```javascript
 var express = require('express');
